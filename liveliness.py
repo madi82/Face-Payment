@@ -54,14 +54,14 @@ def test(image_name, model_dir, device_id):
     label = np.argmax(prediction)
     value = prediction[0][label]/2
     if label == 1:
-        print("Real Face. Score: {:.2f}.".format(value))
+        #print("Real Face. Score: {:.2f}.".format(value))
         result_text = "RealFace Score: {:.2f}".format(value)
         color = (255, 0, 0)
     else:
-        print("Fake Face. Score: {:.2f}.".format(value))
+        #print("Fake Face. Score: {:.2f}.".format(value))
         result_text = "FakeFace Score: {:.2f}".format(value)
         color = (0, 0, 255)
-    print("Prediction cost {:.2f} s".format(test_speed))
+    #print("Prediction cost {:.2f} s".format(test_speed))
     cv2.rectangle(
         image,
         (image_bbox[0], image_bbox[1]),
@@ -76,3 +76,4 @@ def test(image_name, model_dir, device_id):
     #format_ = os.path.splitext(image_name)[-1]
     #result_image_name = image_name.replace(format_, "_result" + format_)
     #cv2.imwrite(result_image_name, image)
+    return label, value, test_speed
