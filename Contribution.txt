@@ -1,0 +1,18 @@
+Roneel Govekar 1153719 rgovekar@lakeheadu.ca
+
+
+-Model Comparison(all models with arcface and facenet)
+-Implementing Face Detection
+-Face alignment 
+-Face image resize 
+-Face image black band
+-Video camera integration
+
+
+Shantanu Madiwale madiwales@lakeheadu.ca
+
+-Implementing Face Recognition
+-Model Comparison(all models with Sface)
+-Implementing Face distance calculation
+-Face spoofing detection
+-Creating application interface
